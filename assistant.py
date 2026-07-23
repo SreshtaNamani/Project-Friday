@@ -1,3 +1,6 @@
+from tkinter import COMMAND
+
+
 def greet():
     print("Friday: Hello!")
 
@@ -9,7 +12,7 @@ def show_help():
     - Exit
     ''')
 
-    COMMANDS = {"hello" : greet,
+    COMMAND = {"hello" : greet,
                 "help" : show_help,
                 }
 
@@ -23,7 +26,7 @@ def start_assistant():
         if command == "exit":
             print("Friday: Goodnight")
             break
-        action COMMANDS.get(command)
+        action = COMMAND.get(command)
         if action: 
             action()
         else:
