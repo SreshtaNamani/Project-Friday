@@ -4,11 +4,11 @@ def greet():
 
 def show_help():
     print('''
-    Available commands:
-    - Hello
-    - Help
-    - Exit
-    ''')
+Available commands:
+- hello
+- help
+- exit
+''')
 
 COMMANDS = {"hello" : greet,
             "help" : show_help,
